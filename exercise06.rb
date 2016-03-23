@@ -24,3 +24,10 @@ puts $grocery_list[1]
 $grocery_list.sort.each do |list|
   puts "* " + list
 end
+
+puts $grocery_list.delete("salmon")
+
+puts $grocery_list[1]
+$grocery_list.sort.each do |list|
+  puts "* " + list
+end
