@@ -13,3 +13,14 @@ end
 
 number = $grocery_list.length
 puts number
+
+if $grocery_list.include?("bananas")
+  puts "You need to pick up bananas"
+else
+  puts "You don't have to pick up bananas today"
+end
+
+puts $grocery_list[1]
+$grocery_list.sort.each do |list|
+  puts "* " + list
+end
