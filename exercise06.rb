@@ -2,13 +2,13 @@ $grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 def addition(items)
   $grocery_list = ["carrots", "toilet paper", "apples", "salmon"] <<("#{items}")
-
 end
 
 addition("rice")
-
-$grocery_list.each do |list|
-  puts "* " + list
+def sort
+  $grocery_list.each do |list|
+    puts "* " + list
+  end
 end
 
 number = $grocery_list.length
@@ -21,13 +21,17 @@ else
 end
 
 puts $grocery_list[1]
-$grocery_list.sort.each do |list|
-  puts "* " + list
-end
+sort
+#$grocery_list.sort.each do |list|
+#  puts "* " + list
+#end
 
 puts $grocery_list.delete("salmon")
-
-puts $grocery_list[1]
-$grocery_list.sort.each do |list|
-  puts "* " + list
-end
+sort
+#$grocery_list.sort.each do |list|
+#  puts "* " + list
+#end
+#wouldn't it better to make this variable?
+  #$grocery_list.sort.each do |list|
+    #puts "* " + list
+  #end
