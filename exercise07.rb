@@ -10,3 +10,8 @@ def student_number
   end
 end
 student_number
+$students[:cohort4] = 43
+student_number
+$students.each do|cohort,number|
+  puts "#{cohort}"
+end
