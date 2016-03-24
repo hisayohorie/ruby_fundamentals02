@@ -1,3 +1,4 @@
+
 $students = {
   :cohort1 => 34,
   :cohort2 => 42,
@@ -17,5 +18,5 @@ $students.each do|cohort,number|
 end
 $students.update($students){|cohort, number| number * 1.05.round}
 puts $students
-$student.delete(:cohort2)
+$students.delete(:cohort2)
 puts $students
